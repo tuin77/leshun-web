@@ -60,7 +60,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  compatibilityDate: '2024-11-21',
+  compatibilityDate: "2024-11-21",
   nitro: {
     handlers: process.env.MOCK
       ? [{ route: "", handler: "./__mocks__/mocks.handlers" }]
