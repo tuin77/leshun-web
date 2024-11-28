@@ -1,2 +1,14 @@
 @use "./theme";
 @use "./base";
+
+.animate-move {
+	animation: move 1s forwards;
+}
+@keyframes move {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}

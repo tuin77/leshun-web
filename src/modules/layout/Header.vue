@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive } from "vue";
-const logo = ref(null);
-
-const open = ref(false);
+import { ref } from "vue";
 
 const isMobile = ref(false);
 
@@ -236,7 +233,7 @@ function handleMouseLeave(event: Event, item: any) {
 					<a href="https://www.shengwang.cn/">
 						<div class="xtopl"></div>
 					</a>
-					<div class="xtopz" style="">
+					<div class="xtopz">
 						<div
 							v-for="item in navLinks"
 							:id="item.id"
@@ -256,6 +253,8 @@ function handleMouseLeave(event: Event, item: any) {
 				</div>
 			</div>
 			<div class="xtop2">
+				<!-- <template v-for="item in navLinks" :id="item.id" :key="item.id"> -->
+				<!-- v-if="item.id === 'xtopzcp'" -->
 				<div class="xtopt">
 					<div id="xdnrkfz" class="xdnrkfz">
 						<div class="x_tblb2">
@@ -358,7 +357,7 @@ function handleMouseLeave(event: Event, item: any) {
 						</div>
 					</div>
 				</div>
-
+				<!-- v-if="item.id === 'xtopzcp'" -->
 				<div id="xdnrcp" class="xdnrcp">
 					<div class="xdnrz">
 						<div class="hezi">
@@ -1551,6 +1550,7 @@ function handleMouseLeave(event: Event, item: any) {
 						</div>
 					</div>
 				</div>
+				<!-- </template> -->
 			</div>
 		</div>
 	</div>
@@ -1558,7 +1558,7 @@ function handleMouseLeave(event: Event, item: any) {
 
 <style></style>
 
-<style>
+<style scoped>
 .scs-row.scs-inner-row {
 	margin-left: 0;
 	margin-right: 0;
