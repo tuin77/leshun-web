@@ -138,7 +138,7 @@
 								<a target="_blank" href="https://github.com/AgoraIO-Community/"></a>
 							</li>
 							<li>
-								<a target="_blank" href="https://www.zhihu.com/org/sheng-wang-agora"></a>
+								<a target="_blank" href="https://www.zhihu.com/people/leshun888"></a>
 							</li>
 						</ul>
 					</div>

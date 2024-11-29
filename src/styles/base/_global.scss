@@ -18,7 +18,7 @@ body {
 #__nuxt {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	padding-top: 5rem;
+	// padding-top: 5rem;
 	min-height: 100%;
 	background: radial-gradient(
 			150% 90% at 70% 50%,
@@ -32,7 +32,7 @@ body {
 		);
 
 	@include tablet-portrait-up {
-		padding-top: 2.5rem;
+		// padding-top: 2.5rem;
 	}
 }
 

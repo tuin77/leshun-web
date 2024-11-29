@@ -15,7 +15,7 @@ useScrollRestoration();
 <template>
 	<PageMetadata>
 		<SkipNavigationLink />
-		<Header></Header>
+		<!-- <Header></Header> -->
 		<Header1></Header1>
 		<MobileNavigation />
 		<HeaderNavbar />

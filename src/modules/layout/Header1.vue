@@ -2,16 +2,61 @@
 const navLinks = ref([
 	{
 		label: "首页",
-		id: "home",
 		isLink: true
 	},
 	{
 		label: "人脸识别",
-		id: "product"
+		id: "product",
+		children: [
+			{
+				label: "消费机",
+				description: "You have nothing to do, @nuxt/icon will handle it automatically."
+			},
+			{
+				label: "团餐机",
+				description: "Choose a primary and a neutral color from your Tailwind CSS theme."
+			},
+			{
+				label: "微信家校视频通话机",
+				description: "You can customize components by using the ."
+			},
+			{
+				label: "门禁机",
+				description: "Choose a primary and a neutral color from your Tailwind CSS theme."
+			}
+		]
 	},
 	{
 		label: "智能硬件",
-		url: "https://www.shengwang.cn/usecase/"
+		url: "https://www.shengwang.cn/usecase/",
+		id: "hardware",
+		children: [
+			{
+				label: "工业级数据传输",
+				desc: "LS-D3000",
+				img: "https://hzleshun.com/static/img/dtu-3000.b9d4fdb.png"
+			},
+			{
+				label: "工业级数据传输",
+				desc: "LSD3300X",
+				img: "https://hzleshun.com/static/img/rtucat.d4e4f7e.png"
+			},
+			{
+				label: "边缘计算网关",
+				desc: "LS-智盒",
+				img: "https://hzleshun.com/static/img/ls-4000.fa92029.png"
+			},
+			{
+				label: "工业级数据传输",
+				desc: "LSD3300X",
+				img: "https://hzleshun.com/static/img/rtucat.d4e4f7e.png"
+			},
+			{
+				label: "移动定位终端",
+				desc: "NB-iot",
+				img: "https://hzleshun.com/static/img/nb.f35b60a.png"
+			}
+		]
 	},
 	{
 		label: "网卡平台",
@@ -29,29 +74,20 @@ const navLinks = ref([
 		children: [{ label: "乐舜简介" }, { label: "合作伙伴" }, { label: "联系我们" }]
 	}
 ]);
-
-function handleMouseenter(event: Event, item: any) {
-	if (!item.id) return;
-	item.isDropdown = true;
-}
-function handleMouseLeave(event: Event, item: any) {
-	if (!item.id) return;
-	item.isDropdown = false;
-}
 </script>
 <template>
-	<header class="bg-white">
+	<header class="bg-white relative header">
 		<nav
-			class="mx-auto relative flex max-w-7xl items-center justify-between px-6 lg:px-8"
+			class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8"
 			aria-label="Global"
 		>
 			<div class="flex lg:flex-1">
-				<a href="#" class="-m-1.5 p-1.5">
+				<a href="#" class="-m-1.5">
 					<span class="sr-only">乐舜信科</span>
 					<img class="h-10 w-auto" src="/logos/logo.svg" alt="" />
 				</a>
 			</div>
-			<div class="flex lg:hidden py-6">
+			<div class="flex lg:hidden py-5">
 				<button
 					type="button"
 					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -74,16 +110,16 @@ function handleMouseLeave(event: Event, item: any) {
 					</svg>
 				</button>
 			</div>
-			<div class="hidden lg:flex lg:gap-x-12 ml--30">
+			<div class="hidden lg:flex lg:gap-x-12">
 				<template v-for="item in navLinks" :key="item.id">
 					<div
 						v-if="!item.isLink"
-						class="group/item py-6"
+						class="group/item py-5.5"
 						:class="[item.position && item.position]"
 					>
 						<button
 							type="button"
-							class="flex items-center gap-x-1 text-base text-gray-900 group-hover/item:text-[#099DFD]"
+							class="flex items-center gap-x-1 text-sm text-[#242F3D] group-hover/item:text-[#099DFD]"
 							aria-expanded="false"
 						>
 							{{ item.label }}
@@ -104,39 +140,16 @@ function handleMouseLeave(event: Event, item: any) {
 
 						<div
 							v-if="item.id === 'product'"
-							class="invisible absolute -left-8 top-full z-10 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 translate-y-1 transition ease-out duration-200 group-hover/item:visible group-hover/item:opacity-100 group-hover/item:translate-y-0 transition ease-in duration-150"
+							class="invisible absolute left-0 top-full z-10 w-screen overflow-hidden rounded bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 translate-y-1 transition ease-out duration-200 group-hover/item:visible group-hover/item:opacity-100 group-hover/item:translate-y-0 transition ease-in duration-150"
 						>
-							<div class="p-4">
+							<div class="p-4 max-w-7xl mx-auto">
 								<div
 									class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
 								>
-									<div
-										class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-									>
-										<svg
-											class="size-6 text-gray-600 group-hover:text-indigo-600"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											aria-hidden="true"
-											data-slot="icon"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
-											/>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
-											/>
-										</svg>
-									</div>
 									<div class="flex-auto">
+										<!-- group-hover:bg-white -->
 										<a href="#" class="block font-semibold text-gray-900">
-											Analytics
+											LSF系列
 											<span class="absolute inset-0"></span>
 										</a>
 										<p class="mt-1 text-gray-600">
@@ -147,25 +160,6 @@ function handleMouseLeave(event: Event, item: any) {
 								<div
 									class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
 								>
-									<div
-										class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-									>
-										<svg
-											class="size-6 text-gray-600 group-hover:text-indigo-600"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											aria-hidden="true"
-											data-slot="icon"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
-											/>
-										</svg>
-									</div>
 									<div class="flex-auto">
 										<a href="#" class="block font-semibold text-gray-900">
 											Engagement
@@ -177,25 +171,6 @@ function handleMouseLeave(event: Event, item: any) {
 								<div
 									class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
 								>
-									<div
-										class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-									>
-										<svg
-											class="size-6 text-gray-600 group-hover:text-indigo-600"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											aria-hidden="true"
-											data-slot="icon"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
-											/>
-										</svg>
-									</div>
 									<div class="flex-auto">
 										<a href="#" class="block font-semibold text-gray-900">
 											Security
@@ -206,112 +181,75 @@ function handleMouseLeave(event: Event, item: any) {
 										</p>
 									</div>
 								</div>
-								<div
-									class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
-								>
-									<div
-										class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-									>
-										<svg
-											class="size-6 text-gray-600 group-hover:text-indigo-600"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											aria-hidden="true"
-											data-slot="icon"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
-											/>
-										</svg>
-									</div>
-									<div class="flex-auto">
-										<a href="#" class="block font-semibold text-gray-900">
-											Integrations
-											<span class="absolute inset-0"></span>
-										</a>
-										<p class="mt-1 text-gray-600">Connect with third-party tools</p>
-									</div>
-								</div>
-								<div
-									class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
-								>
-									<div
-										class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
-									>
-										<svg
-											class="size-6 text-gray-600 group-hover:text-indigo-600"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											aria-hidden="true"
-											data-slot="icon"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-											/>
-										</svg>
-									</div>
-									<div class="flex-auto">
-										<a href="#" class="block font-semibold text-gray-900">
-											Automations
-											<span class="absolute inset-0"></span>
-										</a>
-										<p class="mt-1 text-gray-600">
-											Build strategic funnels that will convert
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-								<a
-									href="#"
-									class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-								>
-									<svg
-										class="size-5 flex-none text-gray-400"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										aria-hidden="true"
-										data-slot="icon"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-									Watch demo
-								</a>
-								<a
-									href="#"
-									class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-								>
-									<svg
-										class="size-5 flex-none text-gray-400"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										aria-hidden="true"
-										data-slot="icon"
-									>
-										<path
-											fill-rule="evenodd"
-											d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
-											clip-rule="evenodd"
-										/>
-									</svg>
-									Contact sales
-								</a>
 							</div>
 						</div>
 						<div
-							v-if="item.children"
+							v-else-if="item.id === 'hardware'"
+							class="invisible absolute left-0 top-full z-10 w-screen overflow-hidden rounded bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 translate-y-1 transition ease-out duration-200 group-hover/item:visible group-hover/item:opacity-100 group-hover/item:translate-y-0 transition ease-in duration-150"
+						>
+							<div class="p-4 max-w-7xl mx-auto">
+								<h2 class="sr-only">Products</h2>
+
+								<div
+									class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-8"
+								>
+									<a
+										v-for="link in item.children"
+										:key="link.label"
+										href="#"
+										class="group"
+									>
+										<img
+											:src="link.img"
+											alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+											class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+										/>
+										<h3 class="mt-4 text-sm text-gray-700">{{ link.desc }}</h3>
+										<p class="mt-1 text-lg font-medium text-gray-900">{{ link.label }}</p>
+									</a>
+									<!-- <a href="#" class="group">
+										<img
+											src="https://hzleshun.com/static/img/rtucat.d4e4f7e.png"
+											alt="Olive drab green insulated bottle with flared screw lid and flat top."
+											class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+										/>
+										<h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+										<p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+									</a>
+									<a href="#" class="group">
+										<img
+											src="https://hzleshun.com/static/img/ls-4000.fa92029.png"
+											alt="Person using a pen to cross a task off a productivity paper card."
+											class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+										/>
+										<h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+										<p class="mt-1 text-lg font-medium text-gray-900">$89</p>
+									</a>
+									<a href="#" class="group">
+										<img
+											src="https://hzleshun.com/static/img/rtu.be11bc0.png"
+											alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+											class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+										/>
+										<h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+										<p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+									</a>
+									<a href="#" class="group">
+										<img
+											src="https://hzleshun.com/static/img/nb.f35b60a.png"
+											alt="Hand holding black machined steel mechanical pencil with brass tip and top."
+											class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-[7/8]"
+										/>
+										<h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+										<p class="mt-1 text-lg font-medium text-gray-900">$35</p>
+									</a> -->
+
+									<!-- More products... -->
+								</div>
+							</div>
+						</div>
+						<div
+							v-else-if="item.children"
 							class="invisible absolute -left-4 top-full z-10 p-4 overflow-hidden rounded bg-white shadow-lg ring-1 ring-gray-900/5 opacity-0 translate-y-1 transition ease-out duration-200 group-hover/item:visible group-hover/item:opacity-100 group-hover/item:translate-y-0 transition ease-in duration-150"
 						>
 							<div
@@ -325,16 +263,12 @@ function handleMouseLeave(event: Event, item: any) {
 							</div>
 						</div>
 					</div>
-					<a v-else href="#" class="text-base text-gray-900 py-6">
+					<a v-else href="#" class="text-sm text-[#242F3D] py-5.5">
 						{{ item.label }}
 					</a>
 				</template>
 			</div>
-			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
-				<!-- <a href="#" class="text-sm/6 font-semibold text-gray-900"
-					>Log in <span aria-hidden="true">&rarr;</span></a
-				> -->
-			</div>
+			<div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
 		</nav>
 		<!-- Mobile menu, show/hide based on menu open state. -->
 		<div class="lg:hidden" role="dialog" aria-modal="true">
@@ -469,3 +403,9 @@ function handleMouseLeave(event: Event, item: any) {
 		</div>
 	</header>
 </template>
+<style scoped>
+.header {
+	z-index: 6666;
+	box-shadow: 0px 4px 16px 0px rgba(31, 35, 37, 0.11);
+}
+</style>
