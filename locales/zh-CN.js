@@ -3,9 +3,9 @@ export default {
 		index: "Home",
 		"get-started": "Get started",
 		"dynamic-page": "Dynamic page",
-		"school-family-video-chat": "School Family Video Chat",
-		aboutus: "about us",
-		skipNavigation: "Skip navigation"
+		"school-family-video-chat": "家校视讯通话机",
+		skipNavigation: "Skip navigation",
+		aboutus: "关于乐舜"
 	},
 	home: {
 		title: "Nuxt 3 template for public websites",

@@ -4,7 +4,7 @@ test.describe("Website language", () => {
 	test("should be English by default", async ({ page }) => {
 		await page.goto("/");
 		await expect(page.getByRole("heading", { level: 1 })).toContainText(
-			"Nuxt 3 template for public websites"
+			"乐舜信科-校园生态服务 团餐机 微信家校视频通话家 门禁班牌 人脸识别设备"
 		);
 	});
 

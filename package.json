@@ -1,7 +1,7 @@
 {
-	"name": "nuxt3-template",
+	"name": "leshun-websites",
 	"private": "true",
-	"description": "Nuxt 3 Template for public websites",
+	"description": "乐舜信科 数字校园全生态平台",
 	"repository": {
 		"url": "https://github.com/jsulpis/nuxt3-template"
 	},

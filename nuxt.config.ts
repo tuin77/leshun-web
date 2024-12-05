@@ -2,6 +2,7 @@ import devConfig from "./config/dev.config";
 import prodConfig from "./config/prod.config";
 import enUS from "./locales/en-US";
 import frFR from "./locales/fr-FR";
+import zhCN from "./locales/zh-CN";
 
 const isProd = process.env.VERCEL_ENV === "production";
 const baseUrl = isProd
@@ -45,6 +46,7 @@ export default defineNuxtConfig({
 	i18n: {
 		baseUrl,
 		locales: [
+			{ code: "cn", iso: "zh-CN", name: "中文" },
 			{ code: "fr", iso: "fr-FR", name: "Français" },
 			{ code: "en", iso: "en-US", name: "English" }
 		],
@@ -54,8 +56,9 @@ export default defineNuxtConfig({
 		},
 		vueI18n: {
 			legacy: false,
-			locale: "en",
+			locale: "cn",
 			messages: {
+				cn: zhCN,
 				en: enUS,
 				fr: frFR
 			}
