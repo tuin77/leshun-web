@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import InstallationContent from "../modules/get-started/InstallationContent.vue";
+import InstallationContent from "../modules/get-started/index.vue";
 
 definePageMeta({
 	navPosition: 1
 });
 defineI18nRoute({
-	paths: {
-		en: "/get-started",
-		fr: "/demarrage"
-	}
+	paths: { en: "/get-started", fr: "/demarrage" }
 });
 </script>
 

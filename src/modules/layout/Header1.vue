@@ -1,9 +1,6 @@
 <script setup lang="ts">
 const navLinks = ref([
-	{
-		label: "首页",
-		isLink: true
-	},
+	{ label: "首页", isLink: true, to: "/" },
 	{
 		label: "人脸识别",
 		id: "product",
@@ -58,10 +55,7 @@ const navLinks = ref([
 			}
 		]
 	},
-	{
-		label: "网卡平台",
-		isLink: true
-	},
+	{ label: "网卡平台", isLink: true, to: "network-card" },
 	{
 		label: "软件服务",
 		position: "relative",
@@ -70,6 +64,7 @@ const navLinks = ref([
 	{
 		label: "关于乐舜",
 		id: "about",
+		to: "/aboutus",
 		position: "relative",
 		children: [{ label: "乐舜简介" }, { label: "合作伙伴" }, { label: "联系我们" }]
 	}
@@ -118,6 +113,7 @@ const navLinks = ref([
 						:class="[item.position && item.position]"
 					>
 						<button
+							v-if="!item.to"
 							type="button"
 							class="flex items-center gap-x-1 text-sm text-[#242F3D] group-hover/item:text-[#099DFD]"
 							aria-expanded="false"
@@ -137,6 +133,27 @@ const navLinks = ref([
 								/>
 							</svg>
 						</button>
+
+						<NuxtLink
+							v-else
+							:to="item.to"
+							class="flex items-center gap-x-1 text-sm text-[#242F3D] group-hover/item:text-[#099DFD]"
+						>
+							{{ item.label }}
+							<svg
+								class="size-4 flex-none text-gray-400 !group-hover/item:text-[#099DFD] !group-hover/item:animate-move"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								aria-hidden="true"
+								data-slot="icon"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</NuxtLink>
 
 						<div
 							v-if="item.id === 'product'"
@@ -263,9 +280,9 @@ const navLinks = ref([
 							</div>
 						</div>
 					</div>
-					<a v-else href="#" class="text-sm text-[#242F3D] py-5.5">
+					<NuxtLink v-else :to="item.to" href="#" class="text-sm text-[#242F3D] py-5.5">
 						{{ item.label }}
-					</a>
+					</NuxtLink>
 				</template>
 			</div>
 			<div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
@@ -407,5 +424,20 @@ const navLinks = ref([
 .header {
 	z-index: 6666;
 	box-shadow: 0px 4px 16px 0px rgba(31, 35, 37, 0.11);
+}
+</style>
+
+<style lang="scss" scoped>
+a {
+	transition: color 100ms, background-color 100ms;
+
+	&:hover,
+	&[aria-current="page"] {
+		font-weight: 700;
+	}
+
+	&[aria-current="page"] {
+		font-weight: 700;
+	}
 }
 </style>

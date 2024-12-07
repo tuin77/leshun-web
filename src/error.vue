@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import PageMetadata from "~/modules/seo/PageMetadata.vue";
 import Main from "~/modules/layout/Main.vue";
-import MobileNavigation from "./modules/navigation/MobileNavigation.vue";
-import HeaderNavbar from "./modules/navigation/HeaderNavbar.vue";
 
 const props = defineProps({
 	error: Object
@@ -13,9 +11,6 @@ const statusCode = computed(() => +props.error?.statusCode);
 
 <template>
 	<PageMetadata>
-		<MobileNavigation />
-		<HeaderNavbar />
-
 		<Main>
 			<section>
 				<strong>{{ statusCode }}</strong>

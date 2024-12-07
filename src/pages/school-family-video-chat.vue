@@ -1884,14 +1884,6 @@ const loopData1 = [
 }
 </style>
 <style lang="scss" scoped>
-body * {
-	box-sizing: border-box;
-	flex-shrink: 0;
-}
-body {
-	font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial,
-		PingFang SC-Light, Microsoft YaHei;
-}
 input {
 	background-color: transparent;
 	border: 0;
