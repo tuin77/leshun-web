@@ -6,107 +6,22 @@ defineI18nRoute({
 	}
 });
 
-const loopData0 = [
+const useCases = [
 	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPng5fbbc9b13671138fa08444b2aa579290917481eb33e3afae2e0f41eb4dd84e97",
-		slot1: 1
+		img: "/images/lsv1000/use-case1.png",
+		name: "校园电话亭"
 	},
 	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPng1334d9ac0b6bc13c024478916db917da862027a0977e7d82baf55bafbe9d295f",
-		specialSlot2: {
-			lanhutext0: "横显示屏",
-			lanhutext1: "LSVMax&nbsp;1000:13.3″",
-			lanhutext2: "分辨率1920*1080"
-		},
-		slot2: 2
+		img: "/images/lsv1000/use-case2.png",
+		name: "学生宿舍"
 	},
 	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPnge7f2e95cedee8fd550fb072ad8bfae5efd1d540d69c535a008c8ecee0b7d482e",
-		specialSlot2: {
-			lanhutext0: "竖显示屏",
-			lanhutext1: "LSV&nbsp;1000:10.1″",
-			lanhutext2: "分辨率800*1280"
-		},
-		slot2: 2
+		img: "/images/lsv1000/use-case3.png",
+		name: "班级走廊"
 	},
 	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPnga728c315102ba082536d6eca4d06a7fa626df5266c77483c818fb812d1ec4747",
-		specialSlot4: {
-			lanhutext0: "处理器",
-			lanhutext1: "高通骁龙八核处理器"
-		},
-		slot4: 4
-	},
-	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPngc83c4ec170c3c78dc696b6afc8c6bf250c0d9137641df6cb84a39e5333ad4243",
-		slot3: 3
-	},
-	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPng0a999b7d9bba1ec9cd81607b487811e4929aaea7c16f044329f28f09be924d03",
-		specialSlot4: { lanhutext0: "存储器", lanhutext1: "2GB+16GB" },
-		slot4: 4
-	},
-	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPng9c414390944b4c6bfbcd0c425d291b2af727186f2fed7cbfd84863d8c20e176c",
-		slot5: 5
-	},
-	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPngc13c1b42d0f38b336e66b289dbbf24775924b163a5edee4d4637f734af5eb322",
-		specialSlot4: {
-			lanhutext0: "触摸屏",
-			lanhutext1: "G+G电容多点触摸屏"
-		},
-		slot4: 4
-	},
-	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPng151abdb89ef247c096d5bd0475b12d3446afb1028c65324179acb95179032b56",
-		specialSlot2: {
-			lanhutext0: "外部接口",
-			lanhutext1: "以太网接口",
-			lanhutext2: "USB接口/SIM卡"
-		},
-		slot2: 2
-	},
-	{
-		lanhuimage0:
-			"https://lanhu-oss.lanhuapp.com/SketchPng0919a6d6da7adc77809c399b0f0579d6d18bbe67dee722844bb85a3bde2f6efe",
-		specialSlot2: {
-			lanhutext0: "电源适配器",
-			lanhutext1: "Input：AC100-24V",
-			lanhutext2: "Output：DC12V/3A"
-		},
-		slot2: 2
-	}
-];
-const loopData1 = [
-	{
-		lanhuBg1:
-			"url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/c1e955adde6146fe8015ded13b10c946_mergeImage.png)",
-		lanhutext0: "校园电话亭"
-	},
-	{
-		lanhuBg1:
-			"url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/919524f2597e4835a16ba396c784791c_mergeImage.png)",
-		lanhutext0: "学生宿舍"
-	},
-	{
-		lanhuBg1:
-			"url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/0332ba4da65740f3826215ea29f4db43_mergeImage.png)",
-		lanhutext0: "班级走廊"
-	},
-	{
-		lanhuBg1:
-			"url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/433fcd8b56f54ae79681e7fd860fb2ce_mergeImage.png)",
-		lanhutext0: "公共区域"
+		img: "/images/lsv1000/use-case4.png",
+		name: "公共区域"
 	}
 ];
 const advantages = [
@@ -122,7 +37,7 @@ const advantages = [
 	},
 	{
 		name: "亲情号通讯录",
-		describe: "可添加多个亲情号，通讯录均可设置",
+		describe: " 可添加多个亲情号 通讯录均可设置",
 		img: "/images/product/advantage3.png"
 	},
 	{
@@ -136,6 +51,68 @@ const advantages = [
 		img: "/images/product/advantage5.png"
 	}
 ];
+const specsParams = [
+	{
+		name: "操作系统",
+		describe: "Android 7.1",
+		describe2: "",
+		img: "/images/lsv1000/specs-param1.png"
+	},
+	{
+		name: "横显示屏",
+		describe: 'LSVMax 1000:13.3"',
+		describe2: "分辨率1920x1080",
+		img: "/images/lsv1000/specs-param2.png"
+	},
+	{
+		name: "竖显示屏",
+		describe: 'LSV 1000:10.1"',
+		describe2: "分辨率800x1280",
+		img: "/images/lsv1000/specs-param3.png"
+	},
+	{
+		name: "处理器",
+		describe: "高通骁龙",
+		describe2: "八核处理器",
+		img: "/images/lsv1000/specs-param4.png"
+	},
+	{
+		name: "NFC",
+		describe: "13.56HMZ",
+		describe2: "",
+		img: "/images/lsv1000/specs-param5.png"
+	},
+	{
+		name: "存储器",
+		describe: "2GB+16GB",
+		describe2: "",
+		img: "/images/lsv1000/specs-param6.png"
+	},
+	{
+		name: "WIFI",
+		describe: "2.4G/5G 支持IEEE",
+		describe2: "802.11 a/b/g/n/ac",
+		img: "/images/lsv1000/specs-param7.png"
+	},
+	{
+		name: "触摸屏",
+		describe: "G+G电容多点触摸屏",
+		describe2: "",
+		img: "/images/lsv1000/specs-param8.png"
+	},
+	{
+		name: "外部接口",
+		describe: "以太网接口",
+		describe2: "USB接口/SIM卡",
+		img: "/images/lsv1000/specs-param9.png"
+	},
+	{
+		name: "电源适配器",
+		describe: "Input: AC100-24V",
+		describe2: "Output: DC12V/3A",
+		img: "/images/lsv1000/specs-param10.png"
+	}
+];
 </script>
 
 <template>
@@ -147,7 +124,7 @@ const advantages = [
 				class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
 			/>
 
-			<div class="mx-auto max-w-screen-2xl pt-48 pb-30 md:px-8">
+			<div class="mx-auto max-w-screen-2xl pt-49 pb-30 md:px-8">
 				<div class="relative isolate overflow-hidden pt-16 flex">
 					<div class="text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
 						<h2 class="text-balance text-6xl font-semibold tracking-tight text-white">
@@ -171,65 +148,27 @@ const advantages = [
 			</div>
 		</div>
 
-		<!-- <div class="section_2 flex-col">
-			<div class="box_1 flex-col">
-				<span class="text_3">产品优势</span>
-				<div class="box_2 flex-row">
-					<div class="box_3 flex-col justify-between">
-						<img
-							class="image_4"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng033088b3816a40f626ac5d4f265a3d802e4146cb76e10d5aa488d8d4f5a6e497"
-						/>
-						<span class="text_4">设备识别速度快</span>
-					</div>
-					<div class="box_4 flex-col justify-between">
-						<div class="image-wrapper_1 flex-col">
-							<img
-								class="image_5"
-								referrerpolicy="no-referrer"
-								src="https://lanhu-oss.lanhuapp.com/SketchPngd2f955f8c69cfafb36c0b81a84c0b1a97b4db35e973b35f6f5912217c738c70b"
-							/>
-						</div>
-						<span class="text_5">安全性强、扩展性好</span>
-					</div>
-					<div class="box_5 flex-col justify-between">
-						<img
-							class="image_6"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng1196ffbe4735612433d45971749a239df89919555c6512f880b02ea319b60598"
-						/>
-						<span class="text_6">亲情号通讯录</span>
-					</div>
-					<div class="box_6 flex-col justify-between">
-						<img
-							class="image_7"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng30afee4cf6061808b58c7d339bf9aeeba80c990e2d0d06d9625acb10c244e94c"
-						/>
-						<span class="text_7">高清语音视频通话</span>
-					</div>
-					<div class="box_7 flex-col justify-between">
-						<img
-							class="image_8"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPnga3db324ced557dc0c359426d9144f2bc17ad33331cf0a908e45c4eb1e044f8ff"
-						/>
-						<span class="text_8">高稳定性</span>
-					</div>
-				</div>
-				<div class="text-wrapper_1 flex-row">
-					<span class="text_9">刷脸离线识别仅需300毫秒，大大提高工作效率</span>
-					<span class="text_10"
-						>双缓存保障，数据准确，设备自动备份，界面可自定义配置</span
+		<div class="bg-white pt-22 pb-36 sm:py-32">
+			<div class="mx-auto max-w-7xl">
+				<h2 class="text-center text-6xl font-semibold text-#333">产品优势</h2>
+				<div class="mx-auto mt-26 flex max-w-6xl justify-around">
+					<div
+						v-for="item in advantages"
+						:key="item.name"
+						class="max-w-198px w-full object-contain flex flex-col items-center justify-start"
 					>
-					<span class="text_11">可添加多个亲情号&nbsp;&nbsp;通讯录均可设置</span>
-					<span class="text_12"
-						>高清3D结构光摄像头，画面清晰有质感，声音清楚，使用流畅</span
-					>
-					<span class="text_13">网络流畅不卡顿，保持稳定，稳定性极高</span>
+						<img
+							class="col-span-2 w-24 h-24 w-full object-contain"
+							:src="item.img"
+							alt="Transistor"
+						/>
+						<p class="text-[21px] text-#333 mt-10 font-medium">{{ item.name }}</p>
+						<p class="text-xl text-#666 text-center mt-6">{{ item.describe }}</p>
+					</div>
 				</div>
 			</div>
+		</div>
+		<!-- <div class="section_2 flex-col">
 			<div class="box_8 flex-col">
 				<div class="text-group_2 flex-col justify-between">
 					<span class="text_14">高清3D结构光摄像头</span>
@@ -293,31 +232,7 @@ const advantages = [
 				>
 			</div>
 		</div> -->
-		<div class="bg-white py-24 sm:py-32">
-			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				<h2 class="text-center text-6xl font-semibold text-gray-900">产品优势</h2>
-				<div
-					class="mx-auto mt-10 grid max-w-4xl grid-cols-5 items-center gap-x-8 gap-y-10 sm:grid-cols-6 sm:gap-x-12 lg:grid-cols-5"
-				>
-					<div
-						v-for="item in advantages"
-						:key="item.name"
-						class="col-span-2 max-h-12 w-full object-contain lg:col-span-1 flex flex-col items-center"
-					>
-						<img
-							class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-							:src="item.img"
-							alt="Transistor"
-							width="158"
-							height="48"
-						/>
-						<p>{{ item.name }}</p>
-						<p>{{ item.describe }}</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section_3 flex-col">
+		<!-- <div class="section_3 flex-col">
 			<span class="text_28">满足多种环境&nbsp;&nbsp;高效灵活服务</span>
 			<img
 				class="image_13"
@@ -368,172 +283,74 @@ const advantages = [
 					src="https://lanhu-oss.lanhuapp.com/SketchPng6de11934ef86655830d4585118666635881a3a8cf4d45f81c7c9f1406bdb7562"
 				/>
 			</div>
-		</div>
-		<div class="section_4 flex-col">
-			<div class="text-group_6 flex-col justify-between">
-				<span class="text_34">信息多样化&nbsp;使用便捷</span>
-				<span class="text_35">多种信息架构，适合多种使用要求，简单大方便捷</span>
-			</div>
-			<div class="block_4 flex-row justify-between">
-				<div class="image-wrapper_5 flex-col">
-					<img
-						class="image_19"
-						referrerpolicy="no-referrer"
-						src="https://lanhu-oss.lanhuapp.com/SketchPng933ef4b0d5d21dc82e2f23f2c4f382421f1e9850f23cf328683bd962f65075e3"
-					/>
+		</div> -->
+		<div class="section_4 flex-col relative">
+			<img
+				src="/images/lsv1000/diversify-bg.png"
+				class="absolute inset-0 -z-10 size-full object-cover object-right"
+			/>
+			<h2 class="text-center">信息多样化&nbsp;使用便捷</h2>
+			<p class="text-center text-white">多种信息架构，适合多种使用要求，简单大方便捷</p>
+			<img class="w-1053px h-666px mx-auto" src="/images/lsv1000/diversify-main1.png" />
+
+			<div class="flex max-w-4xl mx-auto">
+				<div class="flex-col justify-between items-center">
+					<img class="w-170px h-170px" src="/images/lsv1000/diversify-icon1.png" />
+					<span class="text-[26px] text-white mt-5 mb-7">信息发布</span>
 				</div>
-				<img
-					class="image_20"
-					referrerpolicy="no-referrer"
-					src="https://lanhu-oss.lanhuapp.com/SketchPngd78039fa433997a123c49bd7561d0c51aa2d7af7ebb16c691c2f5c4822d7f85d"
-				/>
-			</div>
-			<div class="block_5 flex-row justify-between">
-				<div class="group_6 flex-row justify-between">
-					<div class="box_10 flex-col">
-						<div class="section_5 flex-col"></div>
-						<img
-							class="image_21"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng018a09081b35ecc4b49eb7aa752601329165e787f13f660c13a3d4b477bcbd03"
-						/>
-					</div>
-					<div class="box_11 flex-col">
-						<div class="block_6 flex-col"></div>
-						<img
-							class="image_22"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng20c215c65418f2983f0ef61b35e24b0b66a9800e810aaca0104b460976471bd7"
-						/>
-					</div>
-					<div class="box_12 flex-col">
-						<div class="box_13 flex-col"></div>
-						<img
-							class="image_23"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng0db92666c720ba062639d5753a5fe2cfb761130e7acb8ecb34fd1669dace0fa1"
-						/>
-					</div>
+				<div class="flex-col justify-between items-center">
+					<img class="w-170px h-170px" src="/images/lsv1000/diversify-icon2.png" />
+					<span class="text-[26px] text-white mt-5 mb-7">校园风采</span>
 				</div>
-				<img
-					class="image_24"
-					referrerpolicy="no-referrer"
-					src="https://lanhu-oss.lanhuapp.com/SketchPng24ceff90b0a3fdcb2df0551f5e22f1742612883c10c2bb3b9c424787ef4a99ce"
-				/>
+				<div class="flex-col justify-between items-center">
+					<img class="w-170px h-170px" src="/images/lsv1000/diversify-icon3.png" />
+					<span class="text-[26px] text-white mt-5 mb-7">网络留言</span>
+				</div>
+				<div class="flex-col justify-between items-center">
+					<img class="w-170px h-170px" src="/images/lsv1000/diversify-icon4.png" />
+					<span class="text-[26px] text-white mt-5 mb-7">拓展第三方接口</span>
+				</div>
 			</div>
-			<div class="text-wrapper_5 flex-row">
+			<h3 class="text-4xl">支持自由换肤&nbsp;&nbsp;自定义通话原则</h3>
+			<img class="w-824px h-744px mx-auto" src="/images/lsv1000/diversify-main2.png" />
+
+			<!-- <div class="text-wrapper_5 flex-row">
 				<span class="text_36">信息发布</span>
 				<span class="text_37">校园风采</span>
 				<span class="text_38">网络留言</span>
 				<span class="text_39">拓展第三方接口</span>
-			</div>
-			<span class="text_40">支持自由换肤&nbsp;&nbsp;自定义通话原则</span>
-			<div class="image-wrapper_6 flex-col">
-				<img
-					class="image_25"
-					referrerpolicy="no-referrer"
-					src="https://lanhu-oss.lanhuapp.com/SketchPnge880aa385e949ca9aff8448aa13cc1a2f89924b53956cc9a146cb5820225a90a"
-				/>
-			</div>
-			<img
-				class="image_26"
-				referrerpolicy="no-referrer"
-				src="https://lanhu-oss.lanhuapp.com/SketchPngfd328f6d123755047d5ea2b73d00f13bba0c4371d9b41be018cacd9d9873740d"
-			/>
+			</div> -->
 		</div>
-		<div class="section_6 flex-col">
-			<div class="text-wrapper_6 flex-row">
-				<span class="text_41">消息通知强提醒</span>
-			</div>
-			<div class="box_14 flex-row">
-				<div class="group_7 flex-col justify-between">
-					<div class="image-text_1 flex-col justify-between">
-						<img
-							class="image_27"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPngea4a1053036e6a9c73f9bd2707eef42a5a133e9f2e7e52ac9e393f069857bb64"
-						/>
-						<span class="text-group_7">响铃</span>
-					</div>
-					<div class="image-text_2 flex-col justify-between">
-						<img
-							class="image_28"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng70ac643c7bb363ba4ac27ea325e8dbe0222c99363d57bf9d6780613aa82a8564"
-						/>
-						<span class="text-group_8">震动</span>
-					</div>
-					<div class="image-text_3 flex-col justify-between">
-						<img
-							class="image_29"
-							referrerpolicy="no-referrer"
-							src="https://lanhu-oss.lanhuapp.com/SketchPng5b89c39a3a13cb86478b373e66d80d3966bf6cd77c2534405451f1f8f96d30fa"
-						/>
-						<span class="text-group_9">弹窗</span>
-					</div>
-				</div>
-				<img
-					class="image_30"
-					referrerpolicy="no-referrer"
-					src="https://lanhu-oss.lanhuapp.com/SketchPng7ff68b4623e404de8fcca8e83e88a145d904de6df9a0493a020a26a731914779"
-				/>
-				<img
-					class="image_31"
-					referrerpolicy="no-referrer"
-					src="https://lanhu-oss.lanhuapp.com/SketchPng600a4b5c28c71eada41e7b41e52e9d8e630d53cb453861e6813e5d6b44fa2054"
-				/>
-			</div>
-		</div>
-		<div class="section_7 flex-col">
-			<div class="section_8 flex-col">
-				<span class="text_42">规格参数</span>
-				<div class="grid_1 flex-row">
-					<div
-						v-for="(item, index) in loopData0"
-						:key="index"
-						class="image-text_4 flex-row"
-					>
-						<img class="image_32" referrerpolicy="no-referrer" :src="item.lanhuimage0" />
-						<div v-if="item.slot5 === 5" class="box_15 flex-col justify-between">
-							<div class="text-group_10 flex-col justify-between">
-								<span class="text_43">WIFI</span>
-								<span class="text_44">2.4G/5G&nbsp;支持IEEE</span>
-							</div>
-							<span class="text_45">802.11&nbsp;a/b/g/n/ac</span>
+
+		<div class="bg-#212121 py-24">
+			<div class="mx-auto max-w-6xl px-6 lg:px-8">
+				<h2 class="text-center">消息通知强提醒</h2>
+				<div class="mx-auto flex">
+					<div class="flex flex-col w-170px mr-170px">
+						<div class="flex-col justify-between items-center">
+							<img class="w-170px h-170px" src="/images/lsv1000/msg-notice1.png" />
+							<span class="text-[26px] text-white mt-5 mb-7">响铃</span>
 						</div>
-						<div v-if="item.slot3 === 3" class="text-group_11 flex-col justify-between">
-							<span class="text_46">NFC</span>
-							<span class="text_47">13.56HMZ</span>
+						<div class="flex-col justify-between items-center">
+							<img class="w-170px h-170px" src="/images/lsv1000/msg-notice2.png" />
+							<span class="text-group_8">震动</span>
+							<span class="text-[26px] text-white mt-5 mb-7">震动</span>
 						</div>
-						<div v-if="item.slot4 === 4" class="text-wrapper_7 flex-col justify-between">
-							<span class="text_48" v-html="item.specialSlot4.lanhutext0"></span>
-							<span class="text_49" v-html="item.specialSlot4.lanhutext1"></span>
-						</div>
-						<div v-if="item.slot2 === 2" class="text-group_12 flex-col">
-							<span class="text_50" v-html="item.specialSlot2.lanhutext0"></span>
-							<span class="text_51" v-html="item.specialSlot2.lanhutext1"></span>
-							<span class="text_52" v-html="item.specialSlot2.lanhutext2"></span>
-						</div>
-						<div v-if="item.slot1 === 1" class="text-group_13 flex-col justify-between">
-							<span class="text_53">操作系统</span>
-							<span class="text_54">Android&nbsp;7.1</span>
+						<div class="flex-col justify-between items-center">
+							<img class="w-170px h-170px" src="/images/lsv1000/msg-notice3.png" />
+							<span class="text-[26px] text-white mt-5 mb-7">弹窗</span>
 						</div>
 					</div>
-				</div>
-			</div>
-			<span class="text_55">应用场景</span>
-			<div class="grid_2 flex-row">
-				<div
-					v-for="(item, index) in loopData1"
-					:key="index"
-					class="image-text_5 flex-col justify-between"
-				>
-					<div class="block_7 flex-col" :style="{ background: item.lanhuBg1 }"></div>
-					<span class="text-group_14" v-html="item.lanhutext0"></span>
+					<img
+						src="/images/lsv1000/msg-notice-main.png"
+						alt="Product screenshot"
+						class="flex-1 rounded-xl shadow-xl w-775px h-739px"
+					/>
 				</div>
 			</div>
 		</div>
-		<div class="section_9 flex-col">
+
+		<!-- <div class="section_9 flex-col">
 			<div class="text-group_15 flex-col justify-between">
 				<span class="text_56">兼具品质与美感&nbsp;&nbsp;有颜又抗打</span>
 				<span class="text_57">采用莫氏7级钢化玻璃，兼具美观和安全</span>
@@ -558,232 +375,51 @@ const advantages = [
 				referrerpolicy="no-referrer"
 				src="https://lanhu-oss.lanhuapp.com/SketchPng0dee94d50df629243071e08a818a8a24d86b6c0c1449211d204ab6473cb2dde5"
 			/>
+		</div> -->
+
+		<div class="">
+			<h2 class="text-#333 text-center">规格参数</h2>
+
+			<ul role="list" class="p-6 divide-slate-200 grid grid-cols-4 max-w-5xl mx-auto">
+				<li v-for="(item, index) in specsParams" :key="index" class="flex py-4">
+					<img class="h-10 w-10 rounded-full" :src="item.img" alt="" />
+					<div class="ml-3 overflow-hidden">
+						<p class="text-sm font-medium text-slate-900">{{ item.name }}</p>
+						<p class="text-sm text-slate-500 truncate">
+							{{ item.describe }}
+							<span v-if="item.describe2" class="block">{{ item.describe2 }}</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+			<h2 class="text-#333 text-center">应用场景</h2>
+
+			<div class="grid gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
+				<div v-for="(item, index) in useCases" :key="index" href="#" class="group">
+					<img
+						:src="item.img"
+						alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
+						class="w-563px h-352px aspect-square rounded-lg bg-gray-200 object-cover group-hover:opacity-75"
+					/>
+					<h3 class="mt-4 text-center text-3xl text-gray-700">{{ item.name }}</h3>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 <style lang="scss" scoped>
 .section_2 {
 	position: relative;
-	width: 1920px;
-	height: 2586px;
-	.box_1 {
-		background-color: rgba(249, 249, 249, 1);
-		width: 1920px;
-		height: 746px;
-		.text_3 {
-			width: 240px;
-			height: 89px;
-			overflow-wrap: break-word;
-			color: rgba(51, 51, 51, 1);
-			font-size: 60px;
-			font-family: PingFangSC-Medium;
-			font-weight: 500;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 89px;
-			margin: 88px 0 0 840px;
-		}
-		.box_2 {
-			width: 1167px;
-			height: 174px;
-			margin: 104px 0 0 364px;
-			.box_3 {
-				width: 154px;
-				height: 174px;
-				.image_4 {
-					width: 104px;
-					height: 104px;
-					margin-left: 25px;
-				}
-				.text_4 {
-					width: 154px;
-					height: 30px;
-					overflow-wrap: break-word;
-					color: rgba(51, 51, 51, 1);
-					font-size: 22px;
-					font-family: PingFangSC-Medium;
-					font-weight: 500;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 30px;
-					margin-top: 40px;
-					&:nth-child(4n) {
-						margin-right: 0;
-					}
-					&:nth-last-child(-n + 2) {
-						margin-bottom: 0;
-					}
-				}
-			}
-			.box_4 {
-				width: 198px;
-				height: 174px;
-				margin-left: 84px;
-				.image-wrapper_1 {
-					height: 104px;
-					margin-left: 47px;
-					width: 104px;
-					.image_5 {
-						width: 77px;
-						height: 96px;
-						margin: 4px 0 0 13px;
-					}
-				}
-				.text_5 {
-					width: 198px;
-					height: 30px;
-					overflow-wrap: break-word;
-					color: rgba(51, 51, 51, 1);
-					font-size: 22px;
-					font-family: PingFangSC-Medium;
-					font-weight: 500;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 30px;
-					margin-top: 40px;
-					&:nth-child(2n) {
-						margin-right: 0;
-					}
-					&:nth-last-child(-n + 2) {
-						margin-bottom: 0;
-					}
-				}
-			}
-			.box_5 {
-				width: 132px;
-				height: 173px;
-				margin-left: 100px;
-				.image_6 {
-					width: 104px;
-					height: 104px;
-					margin-left: 14px;
-				}
-				.text_6 {
-					width: 132px;
-					height: 30px;
-					overflow-wrap: break-word;
-					color: rgba(51, 51, 51, 1);
-					font-size: 22px;
-					font-family: PingFangSC-Medium;
-					font-weight: 500;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 30px;
-					margin-top: 39px;
-				}
-			}
-			.box_6 {
-				width: 176px;
-				height: 174px;
-				margin-left: 101px;
-				.image_7 {
-					width: 104px;
-					height: 104px;
-					margin-left: 36px;
-				}
-				.text_7 {
-					width: 176px;
-					height: 30px;
-					overflow-wrap: break-word;
-					color: rgba(51, 51, 51, 1);
-					font-size: 22px;
-					font-family: PingFangSC-Medium;
-					font-weight: 500;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 30px;
-					margin-top: 40px;
-				}
-			}
-			.box_7 {
-				width: 104px;
-				height: 174px;
-				margin-left: 118px;
-				.image_8 {
-					width: 104px;
-					height: 104px;
-				}
-				.text_8 {
-					width: 88px;
-					height: 30px;
-					overflow-wrap: break-word;
-					color: rgba(51, 51, 51, 1);
-					font-size: 22px;
-					font-family: PingFangSC-Medium;
-					font-weight: 500;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 30px;
-					margin: 40px 0 0 8px;
-				}
-			}
-		}
-		.text-wrapper_1 {
-			width: 1232px;
-			height: 120px;
-			margin: 24px 0 147px 344px;
-			.text_9 {
-				width: 193px;
-				height: 90px;
-				overflow-wrap: break-word;
-				color: rgba(102, 102, 102, 1);
-				font-size: 20px;
-				font-weight: normal;
-				text-align: right;
-				line-height: 30px;
-			}
-			.text_10 {
-				width: 193px;
-				height: 90px;
-				overflow-wrap: break-word;
-				color: rgba(102, 102, 102, 1);
-				font-size: 20px;
-				font-weight: normal;
-				text-align: right;
-				line-height: 30px;
-				margin-left: 67px;
-			}
-			.text_11 {
-				width: 193px;
-				height: 60px;
-				overflow-wrap: break-word;
-				color: rgba(102, 102, 102, 1);
-				font-size: 20px;
-				font-weight: normal;
-				text-align: right;
-				line-height: 30px;
-				margin-left: 69px;
-			}
-			.text_12 {
-				width: 193px;
-				height: 120px;
-				overflow-wrap: break-word;
-				color: rgba(102, 102, 102, 1);
-				font-size: 20px;
-				font-weight: normal;
-				text-align: right;
-				line-height: 30px;
-				margin-left: 65px;
-			}
-			.text_13 {
-				width: 193px;
-				height: 60px;
-				overflow-wrap: break-word;
-				color: rgba(102, 102, 102, 1);
-				font-size: 20px;
-				font-weight: normal;
-				text-align: right;
-				line-height: 30px;
-				margin-left: 66px;
-			}
-		}
-	}
+
 	.box_8 {
 		background-color: rgba(73, 73, 73, 1);
 		position: absolute;
 		left: 0;
-		top: 745px;
-		width: 1920px;
+		top: 0;
+		width: 100%;
 		height: 825px;
 		.text-group_2 {
 			width: 560px;
@@ -1194,601 +830,270 @@ const advantages = [
 		}
 	}
 }
-.section_4 {
-	background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/61851c89e7e74778af36b07264ddb6b2_mergeImage.png);
-	position: relative;
-	width: 1920px;
-	height: 2791px;
-	margin-top: -19px;
-	.text-group_6 {
-		width: 660px;
-		height: 147px;
-		margin: 107px 0 0 630px;
-		.text_34 {
-			width: 560px;
-			height: 89px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 60px;
-			font-family: PingFangSC-Semibold;
-			font-weight: 600;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 89px;
-			margin-left: 50px;
-		}
-		.text_35 {
-			width: 660px;
-			height: 42px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 30px;
-			font-weight: normal;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 42px;
-			margin-top: 16px;
-		}
-	}
-	.block_4 {
-		width: 1169px;
-		height: 740px;
-		margin: 96px 0 0 375px;
-		.image-wrapper_5 {
-			height: 739px;
-			background: url(https://lanhu-oss.lanhuapp.com/SketchPngbf0e60f613ff6cc13cb963877ca592622784a683c3dd1d561498205af741cedd) -1px
-				0px no-repeat;
-			background-size: 598px 739px;
-			margin-top: 1px;
-			width: 597px;
-			.image_19 {
-				width: 339px;
-				height: 543px;
-				margin: 82px 0 0 222px;
-			}
-		}
-		.image_20 {
-			width: 450px;
-			height: 720px;
-		}
-	}
-	.block_5 {
-		width: 1236px;
-		height: 189px;
-		margin: 125px 0 0 320px;
-		.group_6 {
-			width: 916px;
-			height: 189px;
-			.box_10 {
-				background-color: rgba(21, 21, 21, 0.4);
-				border-radius: 50%;
-				height: 189px;
-				width: 189px;
-				position: relative;
-				.section_5 {
-					width: 80px;
-					height: 102px;
-					background: url(https://lanhu-oss.lanhuapp.com/SketchPng1fe494df800796545934f1541991ac766ece3cc0c9a71303847292613430c36d)
-						100% no-repeat;
-					background-size: 100% 100%;
-					margin: 43px 0 0 48px;
-				}
-				.image_21 {
-					position: absolute;
-					left: 44px;
-					top: 43px;
-					width: 102px;
-					height: 103px;
-				}
-			}
-			.box_11 {
-				background-color: rgba(21, 21, 21, 0.4);
-				border-radius: 50%;
-				height: 189px;
-				margin-left: 175px;
-				width: 189px;
-				position: relative;
-				.block_6 {
-					width: 94px;
-					height: 72px;
-					background: url(https://lanhu-oss.lanhuapp.com/SketchPng9571ba3aaf43863010efa762a37b4160278776c41d7e56807dc8a9a4eb2fc740)
-						100% no-repeat;
-					background-size: 100% 100%;
-					margin: 53px 0 0 48px;
-				}
-				.image_22 {
-					position: absolute;
-					left: 48px;
-					top: 53px;
-					width: 94px;
-					height: 82px;
-				}
-			}
-			.box_12 {
-				background-color: rgba(21, 21, 21, 0.4);
-				border-radius: 50%;
-				height: 189px;
-				margin-left: 174px;
-				width: 189px;
-				position: relative;
-				.box_13 {
-					width: 90px;
-					height: 72px;
-					background: url(https://lanhu-oss.lanhuapp.com/SketchPng733d7658c2e11c7c5e53d67d13bfb985b36ba413b6483c8a504d32c8b5e43ff3)
-						100% no-repeat;
-					background-size: 100% 100%;
-					margin: 50px 0 0 48px;
-				}
-				.image_23 {
-					position: absolute;
-					left: 46px;
-					top: 48px;
-					width: 97px;
-					height: 94px;
-				}
-			}
-		}
-		.image_24 {
-			width: 101px;
-			height: 97px;
-			margin-top: 46px;
-		}
-	}
-	.text-wrapper_5 {
-		width: 1255px;
-		height: 42px;
-		margin: 40px 0 0 355px;
-		.text_36 {
-			width: 120px;
-			height: 42px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 30px;
-			font-weight: normal;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 42px;
-		}
-		.text_37 {
-			width: 120px;
-			height: 42px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 30px;
-			font-weight: normal;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 42px;
-			margin-left: 244px;
-		}
-		.text_38 {
-			width: 120px;
-			height: 42px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 30px;
-			font-weight: normal;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 42px;
-			margin-left: 243px;
-		}
-		.text_39 {
-			width: 210px;
-			height: 42px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 30px;
-			font-weight: normal;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 42px;
-			margin-left: 198px;
-		}
-	}
-	.text_40 {
-		width: 656px;
+
+.text-group_6 {
+	width: 660px;
+	height: 147px;
+	// margin: 107px 0 0 630px;
+	.text_34 {
+		width: 560px;
 		height: 89px;
 		overflow-wrap: break-word;
 		color: rgba(255, 255, 255, 1);
-		font-size: 48px;
+		font-size: 60px;
+		font-family: PingFangSC-Semibold;
+		font-weight: 600;
+		text-align: left;
+		white-space: nowrap;
+		line-height: 89px;
+		margin-left: 50px;
+	}
+	.text_35 {
+		width: 660px;
+		height: 42px;
+		overflow-wrap: break-word;
+		color: rgba(255, 255, 255, 1);
+		font-size: 30px;
 		font-weight: normal;
 		text-align: left;
 		white-space: nowrap;
-		line-height: 89px;
-		margin: 96px 0 0 634px;
-	}
-	.image-wrapper_6 {
-		height: 827px;
-		background: url(https://lanhu-oss.lanhuapp.com/SketchPngd8308ac9adff58e47bdf3b4a35d4001adbc7cab7177077099e670ed886626f7d)
-			100% no-repeat;
-		background-size: 100% 100%;
-		width: 668px;
-		margin: 80px 0 213px 502px;
-		.image_25 {
-			width: 379px;
-			height: 608px;
-			margin: 92px 0 0 249px;
-		}
-	}
-	.image_26 {
-		position: absolute;
-		left: 989px;
-		top: 1782px;
-		width: 429px;
-		height: 686px;
+		line-height: 42px;
+		margin-top: 16px;
 	}
 }
-.section_6 {
-	background-color: rgba(33, 33, 33, 1);
-	height: 1152px;
-	margin-top: -8px;
-	width: 1920px;
-	.text-wrapper_6 {
-		width: 420px;
-		height: 89px;
-		margin: 88px 0 0 750px;
-		.text_41 {
-			width: 420px;
-			height: 89px;
-			overflow-wrap: break-word;
-			color: rgba(255, 255, 255, 1);
-			font-size: 60px;
-			font-family: PingFangSC-Semibold;
-			font-weight: 600;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 89px;
-		}
-	}
-	.box_14 {
-		width: 1114px;
+.block_4 {
+	width: 1169px;
+	height: 740px;
+	margin: 96px 0 0 375px;
+	.image-wrapper_5 {
 		height: 739px;
-		margin: 90px 0 146px 411px;
-		.group_7 {
-			width: 170px;
-			height: 739px;
-			.image-text_1 {
-				width: 170px;
-				height: 228px;
-				.image_27 {
-					width: 170px;
-					height: 170px;
-				}
-				.text-group_7 {
-					width: 54px;
-					height: 38px;
-					overflow-wrap: break-word;
-					color: rgba(255, 255, 255, 1);
-					font-size: 27px;
-					font-weight: normal;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 38px;
-					margin: 20px 0 0 58px;
-				}
-			}
-			.image-text_2 {
-				width: 170px;
-				height: 228px;
-				margin-top: 28px;
-				.image_28 {
-					width: 170px;
-					height: 170px;
-				}
-				.text-group_8 {
-					width: 54px;
-					height: 38px;
-					overflow-wrap: break-word;
-					color: rgba(255, 255, 255, 1);
-					font-size: 27px;
-					font-weight: normal;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 38px;
-					margin: 20px 0 0 58px;
-				}
-			}
-			.image-text_3 {
-				width: 170px;
-				height: 227px;
-				margin-top: 28px;
-				.image_29 {
-					width: 170px;
-					height: 170px;
-				}
-				.text-group_9 {
-					width: 54px;
-					height: 38px;
-					overflow-wrap: break-word;
-					color: rgba(255, 255, 255, 1);
-					font-size: 27px;
-					font-weight: normal;
-					text-align: left;
-					white-space: nowrap;
-					line-height: 38px;
-					margin: 19px 0 0 58px;
-				}
-			}
-		}
-		.image_30 {
-			width: 372px;
-			height: 739px;
-			margin-left: 169px;
-		}
-		.image_31 {
-			width: 372px;
-			height: 739px;
-			margin-left: 31px;
-		}
+		background: url(https://lanhu-oss.lanhuapp.com/SketchPngbf0e60f613ff6cc13cb963877ca592622784a683c3dd1d561498205af741cedd) -1px
+			0px no-repeat;
+		background-size: 598px 739px;
+		margin-top: 1px;
+		width: 597px;
+	}
+	.image_20 {
+		width: 450px;
+		height: 720px;
 	}
 }
-.section_7 {
-	width: 1920px;
-	height: 2202px;
-	margin-bottom: 1px;
-	.section_8 {
-		background-color: rgba(249, 249, 249, 1);
-		width: 1920px;
-		height: 899px;
-		.text_42 {
-			width: 240px;
-			height: 89px;
-			overflow-wrap: break-word;
-			color: rgba(51, 51, 51, 1);
-			font-size: 60px;
-			font-family: PingFangSC-Medium;
-			font-weight: 500;
-			text-align: left;
-			white-space: nowrap;
-			line-height: 89px;
-			margin: 88px 0 0 840px;
+.block_5 {
+	width: 1236px;
+	height: 189px;
+	margin: 125px 0 0 320px;
+	.group_6 {
+		width: 916px;
+		height: 189px;
+		.box_10 {
+			background-color: rgba(21, 21, 21, 0.4);
+			border-radius: 50%;
+			height: 189px;
+			width: 189px;
+			position: relative;
+			.section_5 {
+				width: 80px;
+				height: 102px;
+				background: url(https://lanhu-oss.lanhuapp.com/SketchPng1fe494df800796545934f1541991ac766ece3cc0c9a71303847292613430c36d)
+					100% no-repeat;
+				background-size: 100% 100%;
+				margin: 43px 0 0 48px;
+			}
+			.image_21 {
+				position: absolute;
+				left: 44px;
+				top: 43px;
+				width: 102px;
+				height: 103px;
+			}
 		}
-		.grid_1 {
-			width: 1281px;
-			height: 514px;
-			flex-wrap: wrap;
-			margin: 80px 0 128px 320px;
-			.image-text_4 {
-				background-color: rgba(255, 255, 255, 1);
-				border-radius: 8px;
-				width: 298px;
-				height: 152px;
-				margin: 0 29px 29px 0;
-				&:nth-child(4n) {
-					margin-right: 0;
-				}
-				&:nth-last-child(-n + 2) {
-					margin-bottom: 0;
-				}
-				.image_32 {
-					width: 96px;
-					height: 96px;
-					margin: 32px 0 0 24px;
-				}
-				.box_15 {
-					width: 138px;
-					height: 92px;
-					margin: 34px 24px 0 16px;
-					.text-group_10 {
-						width: 137px;
-						height: 68px;
-						.text_43 {
-							width: 50px;
-							height: 36px;
-							overflow-wrap: break-word;
-							color: rgba(51, 51, 51, 1);
-							font-size: 24px;
-							font-family: PingFangSC-Semibold;
-							font-weight: 600;
-							text-align: left;
-							white-space: nowrap;
-							line-height: 36px;
-						}
-						.text_44 {
-							width: 137px;
-							height: 24px;
-							overflow-wrap: break-word;
-							color: rgba(102, 102, 102, 1);
-							font-size: 16px;
-							font-weight: normal;
-							text-align: left;
-							white-space: nowrap;
-							line-height: 24px;
-							margin-top: 8px;
-						}
-					}
-					.text_45 {
-						width: 138px;
-						height: 24px;
-						overflow-wrap: break-word;
-						color: rgba(102, 102, 102, 1);
-						font-size: 16px;
-						font-weight: normal;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 24px;
-					}
-				}
-				.text-group_11 {
-					width: 76px;
-					height: 68px;
-					margin: 34px 86px 0 16px;
-					.text_46 {
-						width: 50px;
-						height: 36px;
-						overflow-wrap: break-word;
-						color: rgba(51, 51, 51, 1);
-						font-size: 24px;
-						font-family: PingFangSC-Semibold;
-						font-weight: 600;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 36px;
-					}
-					.text_47 {
-						width: 76px;
-						height: 24px;
-						overflow-wrap: break-word;
-						color: rgba(102, 102, 102, 1);
-						font-size: 16px;
-						font-weight: normal;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 24px;
-						margin-top: 8px;
-					}
-				}
-				.text-wrapper_7 {
-					width: 144px;
-					height: 84px;
-					margin: 34px 18px 0 16px;
-					.text_48 {
-						width: 72px;
-						height: 36px;
-						overflow-wrap: break-word;
-						color: rgba(51, 51, 51, 1);
-						font-size: 24px;
-						font-family: PingFangSC-Semibold;
-						font-weight: 600;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 36px;
-					}
-					.text_49 {
-						width: 146px;
-						height: 24px;
-						overflow-wrap: break-word;
-						color: rgba(102, 102, 102, 1);
-						font-size: 16px;
-						font-weight: normal;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 24px;
-						margin-top: 24px;
-					}
-				}
-				.text-group_12 {
-					width: 143px;
-					height: 92px;
-					margin: 34px 19px 0 16px;
-					.text_50 {
-						width: 120px;
-						height: 36px;
-						overflow-wrap: break-word;
-						color: rgba(51, 51, 51, 1);
-						font-size: 24px;
-						font-family: PingFangSC-Semibold;
-						font-weight: 600;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 36px;
-					}
-					.text_51 {
-						width: 143px;
-						height: 24px;
-						overflow-wrap: break-word;
-						color: rgba(102, 102, 102, 1);
-						font-size: 16px;
-						font-weight: normal;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 24px;
-						margin-top: 8px;
-					}
-					.text_52 {
-						width: 145px;
-						height: 24px;
-						overflow-wrap: break-word;
-						color: rgba(102, 102, 102, 1);
-						font-size: 16px;
-						font-weight: normal;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 24px;
-					}
-				}
-				.text-group_13 {
-					width: 96px;
-					height: 84px;
-					margin: 34px 66px 0 16px;
-					.text_53 {
-						width: 96px;
-						height: 36px;
-						overflow-wrap: break-word;
-						color: rgba(51, 51, 51, 1);
-						font-size: 24px;
-						font-family: PingFangSC-Semibold;
-						font-weight: 600;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 36px;
-					}
-					.text_54 {
-						width: 83px;
-						height: 24px;
-						overflow-wrap: break-word;
-						color: rgba(102, 102, 102, 1);
-						font-size: 16px;
-						font-weight: normal;
-						text-align: left;
-						white-space: nowrap;
-						line-height: 24px;
-						margin-top: 24px;
-					}
-				}
+		.box_11 {
+			background-color: rgba(21, 21, 21, 0.4);
+			border-radius: 50%;
+			height: 189px;
+			margin-left: 175px;
+			width: 189px;
+			position: relative;
+			.block_6 {
+				width: 94px;
+				height: 72px;
+				background: url(https://lanhu-oss.lanhuapp.com/SketchPng9571ba3aaf43863010efa762a37b4160278776c41d7e56807dc8a9a4eb2fc740)
+					100% no-repeat;
+				background-size: 100% 100%;
+				margin: 53px 0 0 48px;
+			}
+			.image_22 {
+				position: absolute;
+				left: 48px;
+				top: 53px;
+				width: 94px;
+				height: 82px;
+			}
+		}
+		.box_12 {
+			background-color: rgba(21, 21, 21, 0.4);
+			border-radius: 50%;
+			height: 189px;
+			margin-left: 174px;
+			width: 189px;
+			position: relative;
+			.box_13 {
+				width: 90px;
+				height: 72px;
+				background: url(https://lanhu-oss.lanhuapp.com/SketchPng733d7658c2e11c7c5e53d67d13bfb985b36ba413b6483c8a504d32c8b5e43ff3)
+					100% no-repeat;
+				background-size: 100% 100%;
+				margin: 50px 0 0 48px;
+			}
+			.image_23 {
+				position: absolute;
+				left: 46px;
+				top: 48px;
+				width: 97px;
+				height: 94px;
 			}
 		}
 	}
-	.text_55 {
-		width: 240px;
-		height: 89px;
+	.image_24 {
+		width: 101px;
+		height: 97px;
+		margin-top: 46px;
+	}
+}
+.text-wrapper_5 {
+	width: 1255px;
+	height: 42px;
+	margin: 40px 0 0 355px;
+	.text_36 {
+		width: 120px;
+		height: 42px;
 		overflow-wrap: break-word;
-		color: rgba(51, 51, 51, 1);
-		font-size: 60px;
-		font-family: PingFangSC-Medium;
-		font-weight: 500;
+		color: rgba(255, 255, 255, 1);
+		font-size: 30px;
+		font-weight: normal;
 		text-align: left;
 		white-space: nowrap;
-		line-height: 89px;
-		margin: 88px 0 0 840px;
+		line-height: 42px;
 	}
-	.grid_2 {
-		width: 1280px;
-		height: 868px;
-		flex-wrap: wrap;
-		margin: 80px 0 178px 320px;
-		.image-text_5 {
+	.text_37 {
+		width: 120px;
+		height: 42px;
+		overflow-wrap: break-word;
+		color: rgba(255, 255, 255, 1);
+		font-size: 30px;
+		font-weight: normal;
+		text-align: left;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-left: 244px;
+	}
+	.text_38 {
+		width: 120px;
+		height: 42px;
+		overflow-wrap: break-word;
+		color: rgba(255, 255, 255, 1);
+		font-size: 30px;
+		font-weight: normal;
+		text-align: left;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-left: 243px;
+	}
+	.text_39 {
+		width: 210px;
+		height: 42px;
+		overflow-wrap: break-word;
+		color: rgba(255, 255, 255, 1);
+		font-size: 30px;
+		font-weight: normal;
+		text-align: left;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-left: 198px;
+	}
+}
+.text_40 {
+	width: 656px;
+	height: 89px;
+	overflow-wrap: break-word;
+	color: rgba(255, 255, 255, 1);
+	font-size: 48px;
+	font-weight: normal;
+	text-align: left;
+	white-space: nowrap;
+	line-height: 89px;
+	margin: 96px 0 0 634px;
+}
+.image-wrapper_6 {
+	height: 827px;
+	background: url(https://lanhu-oss.lanhuapp.com/SketchPngd8308ac9adff58e47bdf3b4a35d4001adbc7cab7177077099e670ed886626f7d)
+		100% no-repeat;
+	background-size: 100% 100%;
+	width: 668px;
+	margin: 80px 0 213px 502px;
+	.image_25 {
+		width: 379px;
+		height: 608px;
+		margin: 92px 0 0 249px;
+	}
+}
+.image_26 {
+	position: absolute;
+	left: 989px;
+	top: 1782px;
+	width: 429px;
+	height: 686px;
+}
+
+.text_55 {
+	width: 240px;
+	height: 89px;
+	overflow-wrap: break-word;
+	color: rgba(51, 51, 51, 1);
+	font-size: 60px;
+	font-family: PingFangSC-Medium;
+	font-weight: 500;
+	text-align: left;
+	white-space: nowrap;
+	line-height: 89px;
+	margin: 88px 0 0 840px;
+}
+.grid_2 {
+	width: 1280px;
+	height: 868px;
+	flex-wrap: wrap;
+	margin: 80px 0 178px 320px;
+	.image-text_5 {
+		width: 626px;
+		height: 410px;
+		margin: 0 28px 48px 0;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0;
+		}
+		.block_7 {
+			border-radius: 4px;
+			background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/c1e955adde6146fe8015ded13b10c946_mergeImage.png);
 			width: 626px;
-			height: 410px;
-			margin: 0 28px 48px 0;
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
-			&:nth-last-child(-n + 2) {
-				margin-bottom: 0;
-			}
-			.block_7 {
-				border-radius: 4px;
-				background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/c1e955adde6146fe8015ded13b10c946_mergeImage.png);
-				width: 626px;
-				height: 352px;
-			}
-			.text-group_14 {
-				width: 150px;
-				height: 42px;
-				overflow-wrap: break-word;
-				color: rgba(51, 51, 51, 1);
-				font-size: 30px;
-				font-weight: normal;
-				text-align: left;
-				white-space: nowrap;
-				line-height: 42px;
-				margin: 16px 0 0 238px;
-			}
+			height: 352px;
+		}
+		.text-group_14 {
+			width: 150px;
+			height: 42px;
+			overflow-wrap: break-word;
+			color: rgba(51, 51, 51, 1);
+			font-size: 30px;
+			font-weight: normal;
+			text-align: left;
+			white-space: nowrap;
+			line-height: 42px;
+			margin: 16px 0 0 238px;
 		}
 	}
 }
+
 .section_9 {
 	position: absolute;
 	left: 0;

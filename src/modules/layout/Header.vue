@@ -26,7 +26,6 @@ const navLinks = ref([
 	},
 	{
 		label: "智能硬件",
-		url: "https://www.shengwang.cn/usecase/",
 		id: "hardware",
 		to: "hardware",
 		children: [
@@ -168,7 +167,7 @@ const navLinks = ref([
 									<div class="flex-auto">
 										<!-- group-hover:bg-white -->
 										<a href="#" class="block font-semibold text-gray-900">
-											LSF系列
+											人脸识别消费机
 											<span class="absolute inset-0"></span>
 										</a>
 										<p class="mt-1 text-gray-600">
@@ -181,7 +180,7 @@ const navLinks = ref([
 								>
 									<div class="flex-auto">
 										<a href="#" class="block font-semibold text-gray-900">
-											Engagement
+											家校视频通话机
 											<span class="absolute inset-0"></span>
 										</a>
 										<p class="mt-1 text-gray-600">Speak directly to your customers</p>
@@ -192,7 +191,7 @@ const navLinks = ref([
 								>
 									<div class="flex-auto">
 										<a href="#" class="block font-semibold text-gray-900">
-											Security
+											团餐机、门禁机
 											<span class="absolute inset-0"></span>
 										</a>
 										<p class="mt-1 text-gray-600">

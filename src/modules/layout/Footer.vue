@@ -27,7 +27,7 @@
 					</ul>
 				</div>
 				<div>
-					<h3 p_icon="+">微信家校视频通话机</h3>
+					<h3 p_icon="+">家校视频通话机</h3>
 					<ul>
 						<li><a target="_blank" href="/instantmessage/">LSV1000通话机</a></li>
 						<li><a target="_blank" href="/rtsa/">LSV2000&3000通话机 </a></li>
@@ -181,8 +181,7 @@
 .links .wechat {
 	display: inline-block;
 	line-height: 100px;
-	background: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Links/assets/images/wechat.png)
-		no-repeat;
+	background: url(/images/common/wechat.png) no-repeat;
 	background-size: 26px 26px;
 	background-position: left center;
 	padding-left: 30px;
@@ -191,8 +190,7 @@
 .links .ewm {
 	width: 180px;
 	height: 180px;
-	background: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Links/assets/images/web-ewm.png)
-		no-repeat;
+	background: url(/images/web-ewm.jpeg) no-repeat;
 	background-size: contain;
 	position: absolute;
 	top: 80px;
@@ -203,8 +201,7 @@
 	display: inline-block;
 	line-height: 100px;
 	margin-left: 50px;
-	background: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Links/assets/images/telphone.png)
-		no-repeat;
+	background: url(/images/common/telphone.png) no-repeat;
 	background-size: 26px 26px;
 	background-position: left center;
 	padding-left: 30px;
@@ -362,7 +359,7 @@ ul {
 }
 .foot1 .linkicon li:nth-child(1) a {
 	width: 50px;
-	background-image: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Footer/assets/images/bilibili.png);
+	background-image: url(/images/common/bilibili.png);
 }
 .foot1 .linkicon li a {
 	display: block;
@@ -373,13 +370,13 @@ ul {
 	background-size: contain;
 }
 .foot1 .linkicon li:nth-child(2) a {
-	background-image: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Footer/assets/images/juejin.png);
+	background-image: url(/images/common/juejin.png);
 }
 .foot1 .linkicon li:nth-child(3) a {
-	background-image: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Footer/assets/images/github.png);
+	background-image: url(/images/common/github.png);
 }
 .foot1 .linkicon li:nth-child(4) a {
-	background-image: url(https://www.shengwang.cn/_cache_4010/_compdelivery/WEB-Footer/assets/images/zhihu.png);
+	background-image: url(/images/common/zhihu.png);
 }
 
 @media (max-width: 768px) {

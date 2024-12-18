@@ -11,7 +11,11 @@ const {
 } = useRuntimeConfig();
 
 const route = useRoute();
-const routeName = computed(() => (route.name ? String(route.name).split("_")[0] : "404"));
+const routeName = computed(
+	() => (route.name ? String(route.name).split("_")[0] : "404") || "乐舜信科"
+);
+console.log("routeName", routeName);
+console.log("head.htmlAttrs?.lang", head.htmlAttrs?.lang);
 </script>
 
 <template>

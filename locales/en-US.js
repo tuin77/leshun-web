@@ -69,6 +69,9 @@ export default {
 			title: "Dynamic page",
 			description: "Example of dynamic page using SSR."
 		},
+		aboutus: {
+			aboutus: "关于乐舜"
+		},
 		404: {
 			title: "Page not found",
 			description: "This page does not exist."

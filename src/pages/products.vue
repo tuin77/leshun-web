@@ -71,7 +71,14 @@ const groups = ref([
 			<div
 				class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"
 			>
-				<a v-for="product in group.children" :key="product.name" href="#" class="group">
+				<NuxtLink
+					v-for="product in group.children"
+					:key="product.name"
+					to="/school-family-video-chat"
+					href="#"
+					class="group"
+				>
+					<!-- <a > -->
 					<img
 						:src="product.img"
 						alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
@@ -79,7 +86,8 @@ const groups = ref([
 					/>
 					<h3 class="mt-4 text-sm text-gray-700">{{ product.name }}</h3>
 					<!-- <p class="mt-1 text-lg font-medium text-gray-900">{{ product.name }}</p> -->
-				</a>
+					<!-- </a> -->
+				</NuxtLink>
 			</div>
 		</div>
 	</div>
